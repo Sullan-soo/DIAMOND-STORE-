@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>DIAMOND TOP-UP</title>
+  <meta name="theme-color" content="#080a0d">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <video class="bg-video" autoplay muted loop playsinline preload="auto">
+    <source src="assets/background.mp4" type="video/mp4">
+  </video>
+  <div class="video-overlay"></div>
+
+  <main id="homePage" class="page active">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">PREMIUM TOP-UP STORE</div>
+        <h1>DIAMOND TOP-UP</h1>
+      </div>
+      <div class="status-dot">● LIVE</div>
+    </header>
+
+    <section class="hero glass">
+      <span class="badge">FAST • SIMPLE • SECURE</span>
+      <h2>Choose your package</h2>
+      <p>Select a package to continue to payment.</p>
+
+      <div class="prices">
+        <button class="price-card" data-amount="200" data-name="MONTHLY">
+          <span>MONTHLY</span><strong>₹200</strong>
+        </button>
+        <button class="price-card" data-amount="400" data-name="5 WEEKLY VIP">
+          <span>5 WEEKLY VIP</span><strong>₹400</strong>
+        </button>
+        <button class="price-card" data-amount="600" data-name="1000 DIAMOND">
+          <span>1000 DIAMOND</span><strong>₹600</strong>
+        </button>
+        <button class="price-card" data-amount="1000" data-name="5000 DIAMOND">
+          <span>5000 DIAMOND</span><strong>₹1000</strong>
+        </button>
+      </div>
+
+      <div class="add-funds glass-inner">
+        <div>
+          <b>Add Funds</b>
+          <small>Keep your existing Add Funds flow unchanged.</small>
+        </div>
+        <span class="lock">UNCHANGED</span>
+      </div>
+    </section>
+  </main>
+
+  <main id="paymentPage" class="page">
+    <section class="payment-card glass">
+      <button id="backBtn" class="back">← Back</button>
+      <span class="badge">PAYMENT</span>
+      <h2 id="selectedName">MONTHLY</h2>
+      <div class="pay-amount" id="selectedAmount">₹200</div>
+
+      <div class="qr-wrap">
+        <img src="assets/payment-qr.jpg" alt="M JOTHIVEL UPI payment QR">
+      </div>
+
+      <div class="upi-box">
+        <b>UPI ID</b>
+        <span>jothivel@fam</span>
+      </div>
+
+      <a id="upiButton" class="pay-btn" href="#">OPEN UPI APP</a>
+      <button id="confirmBtn" class="confirm-btn">I HAVE COMPLETED PAYMENT</button>
+
+      <p class="note">
+        Payment verification is not possible from a GitHub-only static website.
+        The confirmation button submits the payment status; automatic redirect after a real
+        payment requires a payment provider webhook/backend.
+      </p>
+    </section>
+  </main>
+
+  <main id="successPage" class="page">
+    <section class="success-card glass">
+      <div class="success-icon">✓</div>
+      <span class="badge">ORDER STATUS</span>
+      <h2>Payment Submitted</h2>
+      <p id="successText">Your payment step has been submitted.</p>
+      <button id="homeBtn" class="pay-btn">BACK TO HOME</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
